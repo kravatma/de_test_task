@@ -75,16 +75,16 @@ with DAG(
         dag_id="task1_etl",
         description="Обработка постов и комментариев",
         default_args=args,
-        schedule_interval="@daily",
+        schedule="@daily",
         catchup=False,
         max_active_runs=1
         ) as dag:
-    update_posts = PythonOperator(update_posts, task_id='update_posts')
-    update_comments = PythonOperator(update_comments, task_id='update_comments')
-    update_final = PythonOperator(update_final, task_id='update_final')
+    update_posts_task = PythonOperator(python_callable=update_posts, task_id='update_posts', dag=dag)
+    update_comments_task = PythonOperator(python_callable=update_comments, task_id='update_comments', dag=dag)
+    update_final_task = PythonOperator(python_callable=update_final, task_id='update_final', dag=dag)
 
-    update_posts >> update_final
-    update_comments >> update_final
+    update_posts_task >> update_final_task
+    update_comments_task >> update_final_task
 
 
 if __name__ == '__main__':
