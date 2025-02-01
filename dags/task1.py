@@ -8,6 +8,9 @@ from inflection import underscore
 from airflow.utils.dates import days_ago, timedelta
 
 
+"""
+Чтобы БД при запуске в aifrlow работала нормально, нужно поднять полноценный инстанс 
+"""
 con = duckdb.connect("test.db")
 con.sql("USE test.test")
 
