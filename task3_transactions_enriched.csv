@@ -1,0 +1,501 @@
+;transaction_id;client_id;transaction_date;amount;transaction_type;product_details;products_count;total_cost
+0;1;2;2023-02-02;1.5;refund;[{'product_id': 'P1_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P1_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+1;2;3;2023-03-03;3.0;purchase;[{'product_id': 'P2_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P2_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P2_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+2;3;4;2023-04-04;4.5;refund;[{'product_id': 'P3_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+3;4;5;2023-05-05;6.0;purchase;[{'product_id': 'P4_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P4_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+4;5;6;2023-06-06;7.5;refund;[{'product_id': 'P5_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P5_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P5_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+5;6;7;2023-07-07;9.0;purchase;[{'product_id': 'P6_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+6;7;8;2023-08-08;10.5;refund;[{'product_id': 'P7_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P7_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+7;8;9;2023-09-09;12.0;purchase;[{'product_id': 'P8_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P8_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P8_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+8;9;10;2023-10-10;13.5;refund;[{'product_id': 'P9_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+9;10;11;2023-11-11;15.0;purchase;[{'product_id': 'P10_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P10_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+10;11;12;2023-12-12;16.5;refund;[{'product_id': 'P11_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P11_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P11_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+11;12;13;2023-01-13;18.0;purchase;[{'product_id': 'P12_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+12;13;14;2023-02-14;19.5;refund;[{'product_id': 'P13_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P13_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+13;14;15;2023-03-15;21.0;purchase;[{'product_id': 'P14_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P14_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P14_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+14;15;16;2023-04-16;22.5;refund;[{'product_id': 'P15_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+15;16;17;2023-05-17;24.0;purchase;[{'product_id': 'P16_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P16_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+16;17;18;2023-06-18;25.5;refund;[{'product_id': 'P17_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P17_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P17_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+17;18;19;2023-07-19;27.0;purchase;[{'product_id': 'P18_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+18;19;20;2023-08-20;28.5;refund;[{'product_id': 'P19_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P19_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+19;20;21;2023-09-21;30.0;purchase;[{'product_id': 'P20_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P20_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P20_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+20;21;22;2023-10-22;31.5;refund;[{'product_id': 'P21_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+21;22;23;2023-11-23;33.0;purchase;[{'product_id': 'P22_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P22_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+22;23;24;2023-12-24;34.5;refund;[{'product_id': 'P23_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P23_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P23_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+23;24;25;2023-01-25;36.0;purchase;[{'product_id': 'P24_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+24;25;26;2023-02-26;37.5;refund;[{'product_id': 'P25_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P25_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+25;26;27;2023-03-27;39.0;purchase;[{'product_id': 'P26_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P26_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P26_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+26;27;28;2023-04-28;40.5;refund;[{'product_id': 'P27_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+27;28;29;2023-05-01;42.0;purchase;[{'product_id': 'P28_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P28_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+28;29;30;2023-06-02;43.5;refund;[{'product_id': 'P29_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P29_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P29_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+29;30;31;2023-07-03;45.0;purchase;[{'product_id': 'P30_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+30;31;32;2023-08-04;46.5;refund;[{'product_id': 'P31_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P31_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+31;32;33;2023-09-05;48.0;purchase;[{'product_id': 'P32_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P32_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P32_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+32;33;34;2023-10-06;49.5;refund;[{'product_id': 'P33_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+33;34;35;2023-11-07;51.0;purchase;[{'product_id': 'P34_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P34_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+34;35;36;2023-12-08;52.5;refund;[{'product_id': 'P35_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P35_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P35_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+35;36;37;2023-01-09;54.0;purchase;[{'product_id': 'P36_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+36;37;38;2023-02-10;55.5;refund;[{'product_id': 'P37_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P37_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+37;38;39;2023-03-11;57.0;purchase;[{'product_id': 'P38_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P38_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P38_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+38;39;40;2023-04-12;58.5;refund;[{'product_id': 'P39_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+39;40;41;2023-05-13;60.0;purchase;[{'product_id': 'P40_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P40_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+40;41;42;2023-06-14;61.5;refund;[{'product_id': 'P41_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P41_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P41_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+41;42;43;2023-07-15;63.0;purchase;[{'product_id': 'P42_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+42;43;44;2023-08-16;64.5;refund;[{'product_id': 'P43_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P43_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+43;44;45;2023-09-17;66.0;purchase;[{'product_id': 'P44_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P44_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P44_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+44;45;46;2023-10-18;67.5;refund;[{'product_id': 'P45_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+45;46;47;2023-11-19;69.0;purchase;[{'product_id': 'P46_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P46_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+46;47;48;2023-12-20;70.5;refund;[{'product_id': 'P47_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P47_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P47_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+47;48;49;2023-01-21;72.0;purchase;[{'product_id': 'P48_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+48;49;50;2023-02-22;73.5;refund;[{'product_id': 'P49_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P49_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+49;50;51;2023-03-23;75.0;purchase;[{'product_id': 'P50_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P50_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P50_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+50;51;52;2023-04-24;76.5;refund;[{'product_id': 'P51_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+51;52;53;2023-05-25;78.0;purchase;[{'product_id': 'P52_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P52_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+52;53;54;2023-06-26;79.5;refund;[{'product_id': 'P53_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P53_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P53_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+53;54;55;2023-07-27;81.0;purchase;[{'product_id': 'P54_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+54;55;56;2023-08-28;82.5;refund;[{'product_id': 'P55_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P55_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+55;56;57;2023-09-01;84.0;purchase;[{'product_id': 'P56_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P56_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P56_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+56;57;58;2023-10-02;85.5;refund;[{'product_id': 'P57_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+57;58;59;2023-11-03;87.0;purchase;[{'product_id': 'P58_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P58_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+58;59;60;2023-12-04;88.5;refund;[{'product_id': 'P59_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P59_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P59_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+59;60;61;2023-01-05;90.0;purchase;[{'product_id': 'P60_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+60;61;62;2023-02-06;91.5;refund;[{'product_id': 'P61_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P61_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+61;62;63;2023-03-07;93.0;purchase;[{'product_id': 'P62_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P62_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P62_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+62;63;64;2023-04-08;94.5;refund;[{'product_id': 'P63_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+63;64;65;2023-05-09;96.0;purchase;[{'product_id': 'P64_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P64_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+64;65;66;2023-06-10;97.5;refund;[{'product_id': 'P65_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P65_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P65_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+65;66;67;2023-07-11;99.0;purchase;[{'product_id': 'P66_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+66;67;68;2023-08-12;100.5;refund;[{'product_id': 'P67_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P67_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+67;68;69;2023-09-13;102.0;purchase;[{'product_id': 'P68_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P68_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P68_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+68;69;70;2023-10-14;103.5;refund;[{'product_id': 'P69_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+69;70;71;2023-11-15;105.0;purchase;[{'product_id': 'P70_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P70_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+70;71;72;2023-12-16;106.5;refund;[{'product_id': 'P71_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P71_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P71_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+71;72;73;2023-01-17;108.0;purchase;[{'product_id': 'P72_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+72;73;74;2023-02-18;109.5;refund;[{'product_id': 'P73_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P73_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+73;74;75;2023-03-19;111.0;purchase;[{'product_id': 'P74_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P74_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P74_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+74;75;76;2023-04-20;112.5;refund;[{'product_id': 'P75_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+75;76;77;2023-05-21;114.0;purchase;[{'product_id': 'P76_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P76_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+76;77;78;2023-06-22;115.5;refund;[{'product_id': 'P77_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P77_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P77_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+77;78;79;2023-07-23;117.0;purchase;[{'product_id': 'P78_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+78;79;80;2023-08-24;118.5;refund;[{'product_id': 'P79_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P79_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+79;80;81;2023-09-25;120.0;purchase;[{'product_id': 'P80_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P80_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P80_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+80;81;82;2023-10-26;121.5;refund;[{'product_id': 'P81_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+81;82;83;2023-11-27;123.0;purchase;[{'product_id': 'P82_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P82_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+82;83;84;2023-12-28;124.5;refund;[{'product_id': 'P83_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P83_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P83_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+83;84;85;2023-01-01;126.0;purchase;[{'product_id': 'P84_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+84;85;86;2023-02-02;127.5;refund;[{'product_id': 'P85_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P85_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+85;86;87;2023-03-03;129.0;purchase;[{'product_id': 'P86_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P86_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P86_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+86;87;88;2023-04-04;130.5;refund;[{'product_id': 'P87_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+87;88;89;2023-05-05;132.0;purchase;[{'product_id': 'P88_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P88_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+88;89;90;2023-06-06;133.5;refund;[{'product_id': 'P89_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P89_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P89_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+89;90;91;2023-07-07;135.0;purchase;[{'product_id': 'P90_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+90;91;92;2023-08-08;136.5;refund;[{'product_id': 'P91_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P91_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+91;92;93;2023-09-09;138.0;purchase;[{'product_id': 'P92_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P92_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P92_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+92;93;94;2023-10-10;139.5;refund;[{'product_id': 'P93_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+93;94;95;2023-11-11;141.0;purchase;[{'product_id': 'P94_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P94_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+94;95;96;2023-12-12;142.5;refund;[{'product_id': 'P95_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P95_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P95_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+95;96;97;2023-01-13;144.0;purchase;[{'product_id': 'P96_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+96;97;98;2023-02-14;145.5;refund;[{'product_id': 'P97_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P97_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+97;98;99;2023-03-15;147.0;purchase;[{'product_id': 'P98_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P98_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P98_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+98;99;100;2023-04-16;148.5;refund;[{'product_id': 'P99_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+99;100;1;2023-05-17;150.0;purchase;[{'product_id': 'P100_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P100_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+100;101;2;2023-06-18;151.5;refund;[{'product_id': 'P101_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P101_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P101_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+101;102;3;2023-07-19;153.0;purchase;[{'product_id': 'P102_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+102;103;4;2023-08-20;154.5;refund;[{'product_id': 'P103_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P103_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+103;104;5;2023-09-21;156.0;purchase;[{'product_id': 'P104_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P104_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P104_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+104;105;6;2023-10-22;157.5;refund;[{'product_id': 'P105_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+105;106;7;2023-11-23;159.0;purchase;[{'product_id': 'P106_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P106_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+106;107;8;2023-12-24;160.5;refund;[{'product_id': 'P107_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P107_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P107_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+107;108;9;2023-01-25;162.0;purchase;[{'product_id': 'P108_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+108;109;10;2023-02-26;163.5;refund;[{'product_id': 'P109_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P109_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+109;110;11;2023-03-27;165.0;purchase;[{'product_id': 'P110_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P110_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P110_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+110;111;12;2023-04-28;166.5;refund;[{'product_id': 'P111_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+111;112;13;2023-05-01;168.0;purchase;[{'product_id': 'P112_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P112_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+112;113;14;2023-06-02;169.5;refund;[{'product_id': 'P113_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P113_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P113_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+113;114;15;2023-07-03;171.0;purchase;[{'product_id': 'P114_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+114;115;16;2023-08-04;172.5;refund;[{'product_id': 'P115_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P115_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+115;116;17;2023-09-05;174.0;purchase;[{'product_id': 'P116_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P116_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P116_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+116;117;18;2023-10-06;175.5;refund;[{'product_id': 'P117_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+117;118;19;2023-11-07;177.0;purchase;[{'product_id': 'P118_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P118_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+118;119;20;2023-12-08;178.5;refund;[{'product_id': 'P119_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P119_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P119_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+119;120;21;2023-01-09;180.0;purchase;[{'product_id': 'P120_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+120;121;22;2023-02-10;181.5;refund;[{'product_id': 'P121_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P121_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+121;122;23;2023-03-11;183.0;purchase;[{'product_id': 'P122_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P122_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P122_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+122;123;24;2023-04-12;184.5;refund;[{'product_id': 'P123_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+123;124;25;2023-05-13;186.0;purchase;[{'product_id': 'P124_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P124_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+124;125;26;2023-06-14;187.5;refund;[{'product_id': 'P125_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P125_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P125_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+125;126;27;2023-07-15;189.0;purchase;[{'product_id': 'P126_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+126;127;28;2023-08-16;190.5;refund;[{'product_id': 'P127_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P127_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+127;128;29;2023-09-17;192.0;purchase;[{'product_id': 'P128_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P128_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P128_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+128;129;30;2023-10-18;193.5;refund;[{'product_id': 'P129_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+129;130;31;2023-11-19;195.0;purchase;[{'product_id': 'P130_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P130_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+130;131;32;2023-12-20;196.5;refund;[{'product_id': 'P131_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P131_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P131_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+131;132;33;2023-01-21;198.0;purchase;[{'product_id': 'P132_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+132;133;34;2023-02-22;199.5;refund;[{'product_id': 'P133_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P133_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+133;134;35;2023-03-23;201.0;purchase;[{'product_id': 'P134_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P134_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P134_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+134;135;36;2023-04-24;202.5;refund;[{'product_id': 'P135_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+135;136;37;2023-05-25;204.0;purchase;[{'product_id': 'P136_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P136_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+136;137;38;2023-06-26;205.5;refund;[{'product_id': 'P137_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P137_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P137_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+137;138;39;2023-07-27;207.0;purchase;[{'product_id': 'P138_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+138;139;40;2023-08-28;208.5;refund;[{'product_id': 'P139_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P139_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+139;140;41;2023-09-01;210.0;purchase;[{'product_id': 'P140_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P140_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P140_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+140;141;42;2023-10-02;211.5;refund;[{'product_id': 'P141_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+141;142;43;2023-11-03;213.0;purchase;[{'product_id': 'P142_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P142_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+142;143;44;2023-12-04;214.5;refund;[{'product_id': 'P143_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P143_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P143_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+143;144;45;2023-01-05;216.0;purchase;[{'product_id': 'P144_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+144;145;46;2023-02-06;217.5;refund;[{'product_id': 'P145_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P145_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+145;146;47;2023-03-07;219.0;purchase;[{'product_id': 'P146_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P146_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P146_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+146;147;48;2023-04-08;220.5;refund;[{'product_id': 'P147_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+147;148;49;2023-05-09;222.0;purchase;[{'product_id': 'P148_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P148_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+148;149;50;2023-06-10;223.5;refund;[{'product_id': 'P149_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P149_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P149_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+149;150;51;2023-07-11;225.0;purchase;[{'product_id': 'P150_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+150;151;52;2023-08-12;226.5;refund;[{'product_id': 'P151_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P151_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+151;152;53;2023-09-13;228.0;purchase;[{'product_id': 'P152_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P152_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P152_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+152;153;54;2023-10-14;229.5;refund;[{'product_id': 'P153_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+153;154;55;2023-11-15;231.0;purchase;[{'product_id': 'P154_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P154_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+154;155;56;2023-12-16;232.5;refund;[{'product_id': 'P155_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P155_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P155_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+155;156;57;2023-01-17;234.0;purchase;[{'product_id': 'P156_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+156;157;58;2023-02-18;235.5;refund;[{'product_id': 'P157_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P157_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+157;158;59;2023-03-19;237.0;purchase;[{'product_id': 'P158_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P158_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P158_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+158;159;60;2023-04-20;238.5;refund;[{'product_id': 'P159_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+159;160;61;2023-05-21;240.0;purchase;[{'product_id': 'P160_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P160_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+160;161;62;2023-06-22;241.5;refund;[{'product_id': 'P161_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P161_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P161_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+161;162;63;2023-07-23;243.0;purchase;[{'product_id': 'P162_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+162;163;64;2023-08-24;244.5;refund;[{'product_id': 'P163_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P163_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+163;164;65;2023-09-25;246.0;purchase;[{'product_id': 'P164_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P164_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P164_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+164;165;66;2023-10-26;247.5;refund;[{'product_id': 'P165_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+165;166;67;2023-11-27;249.0;purchase;[{'product_id': 'P166_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P166_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+166;167;68;2023-12-28;250.5;refund;[{'product_id': 'P167_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P167_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P167_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+167;168;69;2023-01-01;252.0;purchase;[{'product_id': 'P168_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+168;169;70;2023-02-02;253.5;refund;[{'product_id': 'P169_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P169_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+169;170;71;2023-03-03;255.0;purchase;[{'product_id': 'P170_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P170_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P170_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+170;171;72;2023-04-04;256.5;refund;[{'product_id': 'P171_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+171;172;73;2023-05-05;258.0;purchase;[{'product_id': 'P172_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P172_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+172;173;74;2023-06-06;259.5;refund;[{'product_id': 'P173_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P173_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P173_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+173;174;75;2023-07-07;261.0;purchase;[{'product_id': 'P174_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+174;175;76;2023-08-08;262.5;refund;[{'product_id': 'P175_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P175_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+175;176;77;2023-09-09;264.0;purchase;[{'product_id': 'P176_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P176_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P176_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+176;177;78;2023-10-10;265.5;refund;[{'product_id': 'P177_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+177;178;79;2023-11-11;267.0;purchase;[{'product_id': 'P178_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P178_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+178;179;80;2023-12-12;268.5;refund;[{'product_id': 'P179_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P179_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P179_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+179;180;81;2023-01-13;270.0;purchase;[{'product_id': 'P180_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+180;181;82;2023-02-14;271.5;refund;[{'product_id': 'P181_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P181_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+181;182;83;2023-03-15;273.0;purchase;[{'product_id': 'P182_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P182_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P182_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+182;183;84;2023-04-16;274.5;refund;[{'product_id': 'P183_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+183;184;85;2023-05-17;276.0;purchase;[{'product_id': 'P184_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P184_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+184;185;86;2023-06-18;277.5;refund;[{'product_id': 'P185_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P185_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P185_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+185;186;87;2023-07-19;279.0;purchase;[{'product_id': 'P186_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+186;187;88;2023-08-20;280.5;refund;[{'product_id': 'P187_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P187_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+187;188;89;2023-09-21;282.0;purchase;[{'product_id': 'P188_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P188_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P188_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+188;189;90;2023-10-22;283.5;refund;[{'product_id': 'P189_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+189;190;91;2023-11-23;285.0;purchase;[{'product_id': 'P190_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P190_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+190;191;92;2023-12-24;286.5;refund;[{'product_id': 'P191_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P191_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P191_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+191;192;93;2023-01-25;288.0;purchase;[{'product_id': 'P192_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+192;193;94;2023-02-26;289.5;refund;[{'product_id': 'P193_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P193_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+193;194;95;2023-03-27;291.0;purchase;[{'product_id': 'P194_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P194_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P194_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+194;195;96;2023-04-28;292.5;refund;[{'product_id': 'P195_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+195;196;97;2023-05-01;294.0;purchase;[{'product_id': 'P196_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P196_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+196;197;98;2023-06-02;295.5;refund;[{'product_id': 'P197_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P197_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P197_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+197;198;99;2023-07-03;297.0;purchase;[{'product_id': 'P198_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+198;199;100;2023-08-04;298.5;refund;[{'product_id': 'P199_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P199_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+199;200;1;2023-09-05;300.0;purchase;[{'product_id': 'P200_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P200_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P200_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+200;201;2;2023-10-06;301.5;refund;[{'product_id': 'P201_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+201;202;3;2023-11-07;303.0;purchase;[{'product_id': 'P202_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P202_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+202;203;4;2023-12-08;304.5;refund;[{'product_id': 'P203_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P203_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P203_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+203;204;5;2023-01-09;306.0;purchase;[{'product_id': 'P204_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+204;205;6;2023-02-10;307.5;refund;[{'product_id': 'P205_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P205_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+205;206;7;2023-03-11;309.0;purchase;[{'product_id': 'P206_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P206_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P206_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+206;207;8;2023-04-12;310.5;refund;[{'product_id': 'P207_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+207;208;9;2023-05-13;312.0;purchase;[{'product_id': 'P208_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P208_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+208;209;10;2023-06-14;313.5;refund;[{'product_id': 'P209_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P209_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P209_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+209;210;11;2023-07-15;315.0;purchase;[{'product_id': 'P210_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+210;211;12;2023-08-16;316.5;refund;[{'product_id': 'P211_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P211_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+211;212;13;2023-09-17;318.0;purchase;[{'product_id': 'P212_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P212_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P212_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+212;213;14;2023-10-18;319.5;refund;[{'product_id': 'P213_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+213;214;15;2023-11-19;321.0;purchase;[{'product_id': 'P214_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P214_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+214;215;16;2023-12-20;322.5;refund;[{'product_id': 'P215_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P215_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P215_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+215;216;17;2023-01-21;324.0;purchase;[{'product_id': 'P216_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+216;217;18;2023-02-22;325.5;refund;[{'product_id': 'P217_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P217_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+217;218;19;2023-03-23;327.0;purchase;[{'product_id': 'P218_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P218_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P218_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+218;219;20;2023-04-24;328.5;refund;[{'product_id': 'P219_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+219;220;21;2023-05-25;330.0;purchase;[{'product_id': 'P220_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P220_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+220;221;22;2023-06-26;331.5;refund;[{'product_id': 'P221_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P221_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P221_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+221;222;23;2023-07-27;333.0;purchase;[{'product_id': 'P222_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+222;223;24;2023-08-28;334.5;refund;[{'product_id': 'P223_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P223_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+223;224;25;2023-09-01;336.0;purchase;[{'product_id': 'P224_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P224_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P224_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+224;225;26;2023-10-02;337.5;refund;[{'product_id': 'P225_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+225;226;27;2023-11-03;339.0;purchase;[{'product_id': 'P226_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P226_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+226;227;28;2023-12-04;340.5;refund;[{'product_id': 'P227_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P227_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P227_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+227;228;29;2023-01-05;342.0;purchase;[{'product_id': 'P228_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+228;229;30;2023-02-06;343.5;refund;[{'product_id': 'P229_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P229_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+229;230;31;2023-03-07;345.0;purchase;[{'product_id': 'P230_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P230_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P230_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+230;231;32;2023-04-08;346.5;refund;[{'product_id': 'P231_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+231;232;33;2023-05-09;348.0;purchase;[{'product_id': 'P232_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P232_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+232;233;34;2023-06-10;349.5;refund;[{'product_id': 'P233_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P233_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P233_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+233;234;35;2023-07-11;351.0;purchase;[{'product_id': 'P234_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+234;235;36;2023-08-12;352.5;refund;[{'product_id': 'P235_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P235_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+235;236;37;2023-09-13;354.0;purchase;[{'product_id': 'P236_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P236_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P236_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+236;237;38;2023-10-14;355.5;refund;[{'product_id': 'P237_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+237;238;39;2023-11-15;357.0;purchase;[{'product_id': 'P238_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P238_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+238;239;40;2023-12-16;358.5;refund;[{'product_id': 'P239_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P239_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P239_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+239;240;41;2023-01-17;360.0;purchase;[{'product_id': 'P240_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+240;241;42;2023-02-18;361.5;refund;[{'product_id': 'P241_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P241_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+241;242;43;2023-03-19;363.0;purchase;[{'product_id': 'P242_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P242_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P242_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+242;243;44;2023-04-20;364.5;refund;[{'product_id': 'P243_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+243;244;45;2023-05-21;366.0;purchase;[{'product_id': 'P244_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P244_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+244;245;46;2023-06-22;367.5;refund;[{'product_id': 'P245_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P245_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P245_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+245;246;47;2023-07-23;369.0;purchase;[{'product_id': 'P246_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+246;247;48;2023-08-24;370.5;refund;[{'product_id': 'P247_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P247_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+247;248;49;2023-09-25;372.0;purchase;[{'product_id': 'P248_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P248_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P248_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+248;249;50;2023-10-26;373.5;refund;[{'product_id': 'P249_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+249;250;51;2023-11-27;375.0;purchase;[{'product_id': 'P250_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P250_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+250;251;52;2023-12-28;376.5;refund;[{'product_id': 'P251_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P251_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P251_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+251;252;53;2023-01-01;378.0;purchase;[{'product_id': 'P252_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+252;253;54;2023-02-02;379.5;refund;[{'product_id': 'P253_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P253_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+253;254;55;2023-03-03;381.0;purchase;[{'product_id': 'P254_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P254_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P254_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+254;255;56;2023-04-04;382.5;refund;[{'product_id': 'P255_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+255;256;57;2023-05-05;384.0;purchase;[{'product_id': 'P256_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P256_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+256;257;58;2023-06-06;385.5;refund;[{'product_id': 'P257_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P257_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P257_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+257;258;59;2023-07-07;387.0;purchase;[{'product_id': 'P258_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+258;259;60;2023-08-08;388.5;refund;[{'product_id': 'P259_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P259_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+259;260;61;2023-09-09;390.0;purchase;[{'product_id': 'P260_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P260_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P260_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+260;261;62;2023-10-10;391.5;refund;[{'product_id': 'P261_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+261;262;63;2023-11-11;393.0;purchase;[{'product_id': 'P262_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P262_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+262;263;64;2023-12-12;394.5;refund;[{'product_id': 'P263_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P263_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P263_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+263;264;65;2023-01-13;396.0;purchase;[{'product_id': 'P264_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+264;265;66;2023-02-14;397.5;refund;[{'product_id': 'P265_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P265_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+265;266;67;2023-03-15;399.0;purchase;[{'product_id': 'P266_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P266_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P266_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+266;267;68;2023-04-16;400.5;refund;[{'product_id': 'P267_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+267;268;69;2023-05-17;402.0;purchase;[{'product_id': 'P268_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P268_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+268;269;70;2023-06-18;403.5;refund;[{'product_id': 'P269_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P269_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P269_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+269;270;71;2023-07-19;405.0;purchase;[{'product_id': 'P270_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+270;271;72;2023-08-20;406.5;refund;[{'product_id': 'P271_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P271_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+271;272;73;2023-09-21;408.0;purchase;[{'product_id': 'P272_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P272_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P272_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+272;273;74;2023-10-22;409.5;refund;[{'product_id': 'P273_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+273;274;75;2023-11-23;411.0;purchase;[{'product_id': 'P274_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P274_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+274;275;76;2023-12-24;412.5;refund;[{'product_id': 'P275_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P275_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P275_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+275;276;77;2023-01-25;414.0;purchase;[{'product_id': 'P276_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+276;277;78;2023-02-26;415.5;refund;[{'product_id': 'P277_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P277_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+277;278;79;2023-03-27;417.0;purchase;[{'product_id': 'P278_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P278_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P278_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+278;279;80;2023-04-28;418.5;refund;[{'product_id': 'P279_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+279;280;81;2023-05-01;420.0;purchase;[{'product_id': 'P280_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P280_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+280;281;82;2023-06-02;421.5;refund;[{'product_id': 'P281_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P281_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P281_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+281;282;83;2023-07-03;423.0;purchase;[{'product_id': 'P282_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+282;283;84;2023-08-04;424.5;refund;[{'product_id': 'P283_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P283_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+283;284;85;2023-09-05;426.0;purchase;[{'product_id': 'P284_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P284_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P284_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+284;285;86;2023-10-06;427.5;refund;[{'product_id': 'P285_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+285;286;87;2023-11-07;429.0;purchase;[{'product_id': 'P286_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P286_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+286;287;88;2023-12-08;430.5;refund;[{'product_id': 'P287_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P287_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P287_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+287;288;89;2023-01-09;432.0;purchase;[{'product_id': 'P288_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+288;289;90;2023-02-10;433.5;refund;[{'product_id': 'P289_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P289_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+289;290;91;2023-03-11;435.0;purchase;[{'product_id': 'P290_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P290_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P290_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+290;291;92;2023-04-12;436.5;refund;[{'product_id': 'P291_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+291;292;93;2023-05-13;438.0;purchase;[{'product_id': 'P292_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P292_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+292;293;94;2023-06-14;439.5;refund;[{'product_id': 'P293_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P293_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P293_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+293;294;95;2023-07-15;441.0;purchase;[{'product_id': 'P294_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+294;295;96;2023-08-16;442.5;refund;[{'product_id': 'P295_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P295_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+295;296;97;2023-09-17;444.0;purchase;[{'product_id': 'P296_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P296_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P296_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+296;297;98;2023-10-18;445.5;refund;[{'product_id': 'P297_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+297;298;99;2023-11-19;447.0;purchase;[{'product_id': 'P298_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P298_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+298;299;100;2023-12-20;448.5;refund;[{'product_id': 'P299_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P299_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P299_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+299;300;1;2023-01-21;450.0;purchase;[{'product_id': 'P300_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+300;301;2;2023-02-22;451.5;refund;[{'product_id': 'P301_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P301_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+301;302;3;2023-03-23;453.0;purchase;[{'product_id': 'P302_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P302_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P302_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+302;303;4;2023-04-24;454.5;refund;[{'product_id': 'P303_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+303;304;5;2023-05-25;456.0;purchase;[{'product_id': 'P304_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P304_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+304;305;6;2023-06-26;457.5;refund;[{'product_id': 'P305_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P305_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P305_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+305;306;7;2023-07-27;459.0;purchase;[{'product_id': 'P306_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+306;307;8;2023-08-28;460.5;refund;[{'product_id': 'P307_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P307_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+307;308;9;2023-09-01;462.0;purchase;[{'product_id': 'P308_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P308_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P308_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+308;309;10;2023-10-02;463.5;refund;[{'product_id': 'P309_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+309;310;11;2023-11-03;465.0;purchase;[{'product_id': 'P310_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P310_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+310;311;12;2023-12-04;466.5;refund;[{'product_id': 'P311_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P311_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P311_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+311;312;13;2023-01-05;468.0;purchase;[{'product_id': 'P312_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+312;313;14;2023-02-06;469.5;refund;[{'product_id': 'P313_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P313_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+313;314;15;2023-03-07;471.0;purchase;[{'product_id': 'P314_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P314_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P314_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+314;315;16;2023-04-08;472.5;refund;[{'product_id': 'P315_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+315;316;17;2023-05-09;474.0;purchase;[{'product_id': 'P316_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P316_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+316;317;18;2023-06-10;475.5;refund;[{'product_id': 'P317_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P317_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P317_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+317;318;19;2023-07-11;477.0;purchase;[{'product_id': 'P318_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+318;319;20;2023-08-12;478.5;refund;[{'product_id': 'P319_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P319_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+319;320;21;2023-09-13;480.0;purchase;[{'product_id': 'P320_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P320_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P320_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+320;321;22;2023-10-14;481.5;refund;[{'product_id': 'P321_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+321;322;23;2023-11-15;483.0;purchase;[{'product_id': 'P322_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P322_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+322;323;24;2023-12-16;484.5;refund;[{'product_id': 'P323_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P323_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P323_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+323;324;25;2023-01-17;486.0;purchase;[{'product_id': 'P324_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+324;325;26;2023-02-18;487.5;refund;[{'product_id': 'P325_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P325_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+325;326;27;2023-03-19;489.0;purchase;[{'product_id': 'P326_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P326_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P326_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+326;327;28;2023-04-20;490.5;refund;[{'product_id': 'P327_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+327;328;29;2023-05-21;492.0;purchase;[{'product_id': 'P328_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P328_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+328;329;30;2023-06-22;493.5;refund;[{'product_id': 'P329_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P329_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P329_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+329;330;31;2023-07-23;495.0;purchase;[{'product_id': 'P330_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+330;331;32;2023-08-24;496.5;refund;[{'product_id': 'P331_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P331_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+331;332;33;2023-09-25;498.0;purchase;[{'product_id': 'P332_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P332_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P332_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+332;333;34;2023-10-26;499.5;refund;[{'product_id': 'P333_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+333;334;35;2023-11-27;501.0;purchase;[{'product_id': 'P334_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P334_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+334;335;36;2023-12-28;502.5;refund;[{'product_id': 'P335_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P335_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P335_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+335;336;37;2023-01-01;504.0;purchase;[{'product_id': 'P336_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+336;337;38;2023-02-02;505.5;refund;[{'product_id': 'P337_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P337_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+337;338;39;2023-03-03;507.0;purchase;[{'product_id': 'P338_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P338_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P338_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+338;339;40;2023-04-04;508.5;refund;[{'product_id': 'P339_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+339;340;41;2023-05-05;510.0;purchase;[{'product_id': 'P340_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P340_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+340;341;42;2023-06-06;511.5;refund;[{'product_id': 'P341_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P341_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P341_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+341;342;43;2023-07-07;513.0;purchase;[{'product_id': 'P342_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+342;343;44;2023-08-08;514.5;refund;[{'product_id': 'P343_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P343_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+343;344;45;2023-09-09;516.0;purchase;[{'product_id': 'P344_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P344_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P344_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+344;345;46;2023-10-10;517.5;refund;[{'product_id': 'P345_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+345;346;47;2023-11-11;519.0;purchase;[{'product_id': 'P346_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P346_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+346;347;48;2023-12-12;520.5;refund;[{'product_id': 'P347_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P347_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P347_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+347;348;49;2023-01-13;522.0;purchase;[{'product_id': 'P348_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+348;349;50;2023-02-14;523.5;refund;[{'product_id': 'P349_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P349_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+349;350;51;2023-03-15;525.0;purchase;[{'product_id': 'P350_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P350_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P350_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+350;351;52;2023-04-16;526.5;refund;[{'product_id': 'P351_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+351;352;53;2023-05-17;528.0;purchase;[{'product_id': 'P352_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P352_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+352;353;54;2023-06-18;529.5;refund;[{'product_id': 'P353_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P353_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P353_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+353;354;55;2023-07-19;531.0;purchase;[{'product_id': 'P354_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+354;355;56;2023-08-20;532.5;refund;[{'product_id': 'P355_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P355_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+355;356;57;2023-09-21;534.0;purchase;[{'product_id': 'P356_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P356_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P356_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+356;357;58;2023-10-22;535.5;refund;[{'product_id': 'P357_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+357;358;59;2023-11-23;537.0;purchase;[{'product_id': 'P358_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P358_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+358;359;60;2023-12-24;538.5;refund;[{'product_id': 'P359_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P359_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P359_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+359;360;61;2023-01-25;540.0;purchase;[{'product_id': 'P360_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+360;361;62;2023-02-26;541.5;refund;[{'product_id': 'P361_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P361_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+361;362;63;2023-03-27;543.0;purchase;[{'product_id': 'P362_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P362_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P362_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+362;363;64;2023-04-28;544.5;refund;[{'product_id': 'P363_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+363;364;65;2023-05-01;546.0;purchase;[{'product_id': 'P364_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P364_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+364;365;66;2023-06-02;547.5;refund;[{'product_id': 'P365_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P365_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P365_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+365;366;67;2023-07-03;549.0;purchase;[{'product_id': 'P366_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+366;367;68;2023-08-04;550.5;refund;[{'product_id': 'P367_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P367_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+367;368;69;2023-09-05;552.0;purchase;[{'product_id': 'P368_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P368_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P368_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+368;369;70;2023-10-06;553.5;refund;[{'product_id': 'P369_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+369;370;71;2023-11-07;555.0;purchase;[{'product_id': 'P370_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P370_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+370;371;72;2023-12-08;556.5;refund;[{'product_id': 'P371_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P371_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P371_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+371;372;73;2023-01-09;558.0;purchase;[{'product_id': 'P372_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+372;373;74;2023-02-10;559.5;refund;[{'product_id': 'P373_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P373_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+373;374;75;2023-03-11;561.0;purchase;[{'product_id': 'P374_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P374_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P374_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+374;375;76;2023-04-12;562.5;refund;[{'product_id': 'P375_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+375;376;77;2023-05-13;564.0;purchase;[{'product_id': 'P376_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P376_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+376;377;78;2023-06-14;565.5;refund;[{'product_id': 'P377_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P377_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P377_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+377;378;79;2023-07-15;567.0;purchase;[{'product_id': 'P378_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+378;379;80;2023-08-16;568.5;refund;[{'product_id': 'P379_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P379_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+379;380;81;2023-09-17;570.0;purchase;[{'product_id': 'P380_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P380_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P380_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+380;381;82;2023-10-18;571.5;refund;[{'product_id': 'P381_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+381;382;83;2023-11-19;573.0;purchase;[{'product_id': 'P382_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P382_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+382;383;84;2023-12-20;574.5;refund;[{'product_id': 'P383_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P383_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P383_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+383;384;85;2023-01-21;576.0;purchase;[{'product_id': 'P384_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+384;385;86;2023-02-22;577.5;refund;[{'product_id': 'P385_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P385_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+385;386;87;2023-03-23;579.0;purchase;[{'product_id': 'P386_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P386_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P386_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+386;387;88;2023-04-24;580.5;refund;[{'product_id': 'P387_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+387;388;89;2023-05-25;582.0;purchase;[{'product_id': 'P388_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P388_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+388;389;90;2023-06-26;583.5;refund;[{'product_id': 'P389_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P389_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P389_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+389;390;91;2023-07-27;585.0;purchase;[{'product_id': 'P390_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+390;391;92;2023-08-28;586.5;refund;[{'product_id': 'P391_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P391_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+391;392;93;2023-09-01;588.0;purchase;[{'product_id': 'P392_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P392_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P392_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+392;393;94;2023-10-02;589.5;refund;[{'product_id': 'P393_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+393;394;95;2023-11-03;591.0;purchase;[{'product_id': 'P394_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P394_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+394;395;96;2023-12-04;592.5;refund;[{'product_id': 'P395_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P395_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P395_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+395;396;97;2023-01-05;594.0;purchase;[{'product_id': 'P396_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+396;397;98;2023-02-06;595.5;refund;[{'product_id': 'P397_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P397_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+397;398;99;2023-03-07;597.0;purchase;[{'product_id': 'P398_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P398_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P398_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+398;399;100;2023-04-08;598.5;refund;[{'product_id': 'P399_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+399;400;1;2023-05-09;600.0;purchase;[{'product_id': 'P400_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P400_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+400;401;2;2023-06-10;601.5;refund;[{'product_id': 'P401_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P401_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P401_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+401;402;3;2023-07-11;603.0;purchase;[{'product_id': 'P402_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+402;403;4;2023-08-12;604.5;refund;[{'product_id': 'P403_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P403_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+403;404;5;2023-09-13;606.0;purchase;[{'product_id': 'P404_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P404_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P404_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+404;405;6;2023-10-14;607.5;refund;[{'product_id': 'P405_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+405;406;7;2023-11-15;609.0;purchase;[{'product_id': 'P406_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P406_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+406;407;8;2023-12-16;610.5;refund;[{'product_id': 'P407_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P407_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P407_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+407;408;9;2023-01-17;612.0;purchase;[{'product_id': 'P408_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+408;409;10;2023-02-18;613.5;refund;[{'product_id': 'P409_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P409_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+409;410;11;2023-03-19;615.0;purchase;[{'product_id': 'P410_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P410_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P410_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+410;411;12;2023-04-20;616.5;refund;[{'product_id': 'P411_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+411;412;13;2023-05-21;618.0;purchase;[{'product_id': 'P412_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P412_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+412;413;14;2023-06-22;619.5;refund;[{'product_id': 'P413_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P413_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P413_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+413;414;15;2023-07-23;621.0;purchase;[{'product_id': 'P414_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+414;415;16;2023-08-24;622.5;refund;[{'product_id': 'P415_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P415_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+415;416;17;2023-09-25;624.0;purchase;[{'product_id': 'P416_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P416_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P416_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+416;417;18;2023-10-26;625.5;refund;[{'product_id': 'P417_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+417;418;19;2023-11-27;627.0;purchase;[{'product_id': 'P418_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P418_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+418;419;20;2023-12-28;628.5;refund;[{'product_id': 'P419_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P419_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P419_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+419;420;21;2023-01-01;630.0;purchase;[{'product_id': 'P420_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+420;421;22;2023-02-02;631.5;refund;[{'product_id': 'P421_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P421_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+421;422;23;2023-03-03;633.0;purchase;[{'product_id': 'P422_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P422_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P422_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+422;423;24;2023-04-04;634.5;refund;[{'product_id': 'P423_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+423;424;25;2023-05-05;636.0;purchase;[{'product_id': 'P424_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P424_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+424;425;26;2023-06-06;637.5;refund;[{'product_id': 'P425_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P425_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P425_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+425;426;27;2023-07-07;639.0;purchase;[{'product_id': 'P426_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+426;427;28;2023-08-08;640.5;refund;[{'product_id': 'P427_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P427_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+427;428;29;2023-09-09;642.0;purchase;[{'product_id': 'P428_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P428_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P428_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+428;429;30;2023-10-10;643.5;refund;[{'product_id': 'P429_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+429;430;31;2023-11-11;645.0;purchase;[{'product_id': 'P430_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P430_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+430;431;32;2023-12-12;646.5;refund;[{'product_id': 'P431_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P431_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P431_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+431;432;33;2023-01-13;648.0;purchase;[{'product_id': 'P432_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+432;433;34;2023-02-14;649.5;refund;[{'product_id': 'P433_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P433_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+433;434;35;2023-03-15;651.0;purchase;[{'product_id': 'P434_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P434_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P434_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+434;435;36;2023-04-16;652.5;refund;[{'product_id': 'P435_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+435;436;37;2023-05-17;654.0;purchase;[{'product_id': 'P436_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P436_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+436;437;38;2023-06-18;655.5;refund;[{'product_id': 'P437_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P437_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P437_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+437;438;39;2023-07-19;657.0;purchase;[{'product_id': 'P438_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+438;439;40;2023-08-20;658.5;refund;[{'product_id': 'P439_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P439_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+439;440;41;2023-09-21;660.0;purchase;[{'product_id': 'P440_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P440_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P440_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+440;441;42;2023-10-22;661.5;refund;[{'product_id': 'P441_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+441;442;43;2023-11-23;663.0;purchase;[{'product_id': 'P442_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P442_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+442;443;44;2023-12-24;664.5;refund;[{'product_id': 'P443_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P443_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P443_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+443;444;45;2023-01-25;666.0;purchase;[{'product_id': 'P444_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+444;445;46;2023-02-26;667.5;refund;[{'product_id': 'P445_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P445_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+445;446;47;2023-03-27;669.0;purchase;[{'product_id': 'P446_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P446_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P446_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+446;447;48;2023-04-28;670.5;refund;[{'product_id': 'P447_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+447;448;49;2023-05-01;672.0;purchase;[{'product_id': 'P448_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P448_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+448;449;50;2023-06-02;673.5;refund;[{'product_id': 'P449_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P449_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P449_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+449;450;51;2023-07-03;675.0;purchase;[{'product_id': 'P450_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+450;451;52;2023-08-04;676.5;refund;[{'product_id': 'P451_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P451_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+451;452;53;2023-09-05;678.0;purchase;[{'product_id': 'P452_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P452_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P452_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+452;453;54;2023-10-06;679.5;refund;[{'product_id': 'P453_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+453;454;55;2023-11-07;681.0;purchase;[{'product_id': 'P454_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P454_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+454;455;56;2023-12-08;682.5;refund;[{'product_id': 'P455_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P455_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P455_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+455;456;57;2023-01-09;684.0;purchase;[{'product_id': 'P456_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+456;457;58;2023-02-10;685.5;refund;[{'product_id': 'P457_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P457_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+457;458;59;2023-03-11;687.0;purchase;[{'product_id': 'P458_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P458_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P458_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+458;459;60;2023-04-12;688.5;refund;[{'product_id': 'P459_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+459;460;61;2023-05-13;690.0;purchase;[{'product_id': 'P460_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P460_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+460;461;62;2023-06-14;691.5;refund;[{'product_id': 'P461_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P461_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P461_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+461;462;63;2023-07-15;693.0;purchase;[{'product_id': 'P462_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+462;463;64;2023-08-16;694.5;refund;[{'product_id': 'P463_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P463_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+463;464;65;2023-09-17;696.0;purchase;[{'product_id': 'P464_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P464_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P464_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+464;465;66;2023-10-18;697.5;refund;[{'product_id': 'P465_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+465;466;67;2023-11-19;699.0;purchase;[{'product_id': 'P466_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P466_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+466;467;68;2023-12-20;700.5;refund;[{'product_id': 'P467_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P467_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P467_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+467;468;69;2023-01-21;702.0;purchase;[{'product_id': 'P468_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+468;469;70;2023-02-22;703.5;refund;[{'product_id': 'P469_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P469_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+469;470;71;2023-03-23;705.0;purchase;[{'product_id': 'P470_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P470_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P470_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+470;471;72;2023-04-24;706.5;refund;[{'product_id': 'P471_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+471;472;73;2023-05-25;708.0;purchase;[{'product_id': 'P472_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P472_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+472;473;74;2023-06-26;709.5;refund;[{'product_id': 'P473_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P473_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P473_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+473;474;75;2023-07-27;711.0;purchase;[{'product_id': 'P474_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+474;475;76;2023-08-28;712.5;refund;[{'product_id': 'P475_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P475_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+475;476;77;2023-09-01;714.0;purchase;[{'product_id': 'P476_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P476_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P476_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+476;477;78;2023-10-02;715.5;refund;[{'product_id': 'P477_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+477;478;79;2023-11-03;717.0;purchase;[{'product_id': 'P478_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P478_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+478;479;80;2023-12-04;718.5;refund;[{'product_id': 'P479_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P479_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P479_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+479;480;81;2023-01-05;720.0;purchase;[{'product_id': 'P480_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+480;481;82;2023-02-06;721.5;refund;[{'product_id': 'P481_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P481_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+481;482;83;2023-03-07;723.0;purchase;[{'product_id': 'P482_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P482_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P482_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+482;483;84;2023-04-08;724.5;refund;[{'product_id': 'P483_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+483;484;85;2023-05-09;726.0;purchase;[{'product_id': 'P484_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P484_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+484;485;86;2023-06-10;727.5;refund;[{'product_id': 'P485_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P485_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P485_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+485;486;87;2023-07-11;729.0;purchase;[{'product_id': 'P486_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+486;487;88;2023-08-12;730.5;refund;[{'product_id': 'P487_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P487_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+487;488;89;2023-09-13;732.0;purchase;[{'product_id': 'P488_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P488_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P488_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+488;489;90;2023-10-14;733.5;refund;[{'product_id': 'P489_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+489;490;91;2023-11-15;735.0;purchase;[{'product_id': 'P490_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P490_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+490;491;92;2023-12-16;736.5;refund;[{'product_id': 'P491_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P491_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P491_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+491;492;93;2023-01-17;738.0;purchase;[{'product_id': 'P492_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+492;493;94;2023-02-18;739.5;refund;[{'product_id': 'P493_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P493_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+493;494;95;2023-03-19;741.0;purchase;[{'product_id': 'P494_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P494_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P494_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+494;495;96;2023-04-20;742.5;refund;[{'product_id': 'P495_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+495;496;97;2023-05-21;744.0;purchase;[{'product_id': 'P496_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P496_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+496;497;98;2023-06-22;745.5;refund;[{'product_id': 'P497_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P497_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P497_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0
+497;498;99;2023-07-23;747.0;purchase;[{'product_id': 'P498_1', 'quantity': 2, 'price_per_unit': 20.0}];1;40.0
+498;499;100;2023-08-24;748.5;refund;[{'product_id': 'P499_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P499_2', 'quantity': 3, 'price_per_unit': 30.0}];2;130.0
+499;500;1;2023-09-25;0.0;purchase;[{'product_id': 'P500_1', 'quantity': 2, 'price_per_unit': 20.0}, {'product_id': 'P500_2', 'quantity': 3, 'price_per_unit': 30.0}, {'product_id': 'P500_3', 'quantity': 4, 'price_per_unit': 40.0}];3;290.0

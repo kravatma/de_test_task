@@ -67,7 +67,7 @@ if __name__ == "__main__":
     cdf = pandas.DataFrame(clients)
     tdf = pandas.DataFrame(transactions)
 
-    tdf.to_csv("transactions_enriched.csv", sep=';', header=True)
+    tdf.to_csv("task3_transactions_enriched.csv", sep=';', header=True)
 
     tdf_grb = tdf.groupby('client_id').agg({"amount": "sum", "total_cost": "mean", "products_count": "sum"})
     cdf_grb = cdf.groupby('country', as_index=False)[['client_id']].count().sort_values('client_id', ascending=False).head(5)
@@ -76,4 +76,4 @@ if __name__ == "__main__":
     cdf = cdf.merge(cdf_grb, on='country', how='left').set_index('client_id')
     clients_pv_final = tdf_grb.join(cdf[['top5_countries']])
     clients_pv_final.fillna({'top5_countries': 0}, inplace=True)
-    clients_pv_final.to_csv('clients_pivot.csv', index=True, sep=';')
+    clients_pv_final.to_csv('task3_clients_pivot.csv', index=True, sep=';')
