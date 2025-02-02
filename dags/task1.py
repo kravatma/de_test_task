@@ -9,8 +9,15 @@ from airflow.utils.dates import days_ago, timedelta
 
 
 """
-Чтобы БД при запуске в aifrlow работала нормально, нужно поднять полноценный инстанс 
+Чтобы при запуске в aifrlow БД работала корректно - нужно поднять полноценный инстанс
+В реальности должно быть что-то вроде:
+
+from airflow.models import Variable
+engine = slqaclchemy.create_engine(Variable.get("cool_db_con_string"))
+con = engine.connect()
+...
 """
+
 con = duckdb.connect("test.db")
 con.sql("USE test.test")
 
